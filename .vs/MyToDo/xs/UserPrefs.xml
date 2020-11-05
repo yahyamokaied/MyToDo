@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{B0CAE0C6-931C-443E-ADCA-239467FF01AB}|Default">
+  <MonoDevelop.Ide.ItemProperties.MyToDo.Android PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MyToDo" expanded="True">
+            <Node name="MyToDo" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="AddTask.xaml" expanded="True" />
+                <Node name="MainPage.xaml" expanded="True" selected="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.ItemProperties.MyToDo.iOS FirstBuild="True" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.86e776950e6b88e08b9bcd2ed40bfe8ac079c5ba" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
