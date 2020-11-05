@@ -1,6 +1,9 @@
-﻿<Properties StartupConfiguration="{B0CAE0C6-931C-443E-ADCA-239467FF01AB}|Default">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{B0CAE0C6-931C-443E-ADCA-239467FF01AB}|Default">
   <MonoDevelop.Ide.ItemProperties.MyToDo.Android PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
   <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="MyToDo/Views/MainPage.xaml" Line="11" Column="19" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
