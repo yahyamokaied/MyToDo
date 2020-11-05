@@ -8,6 +8,8 @@
     </NavigationPage.TitleView>
     <StackLayout>
 <Button Text="Add Task" Clicked="Btn_GoToAddTask"/>
+
+        <Label Text="Here is your tasks" />
     </StackLayout>
 
 </ContentPage>
