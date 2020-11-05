@@ -4,7 +4,11 @@
              x:Class="MyToDo.Views.AddTask">
 
     <ContentPage.Content>
-        <Button Text="Back To Home" Clicked="Btn_GoToHome"/>
+        <!--<Button Text="Back To Home" Clicked="Btn_GoToHome"/>-->
+        <Label Text="{Binding Id}" HorizontalOptions="Start" 
+
+                   TextColor="Black" FontSize="Medium" /> 
+                  
     </ContentPage.Content>
 
 </ContentPage>

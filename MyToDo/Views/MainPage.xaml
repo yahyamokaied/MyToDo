@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:MyToDo.ViewModels"
              x:Class="MyToDo.Views.MainPage">
 
     <NavigationPage.TitleView>
@@ -10,6 +10,14 @@
 <Button Text="Add Task" Clicked="Btn_GoToAddTask"/>
 
         <Label Text="Here is your tasks" />
+        <Label Text="{Binding DateTime, StringFormat='{0:T}'}"
+           FontSize="Large"
+           HorizontalOptions="Center"
+           VerticalOptions="Center">
+        <Label.BindingContext>
+            <local:MainPageViewModel />
+        </Label.BindingContext>
+    </Label>
     </StackLayout>
 
 </ContentPage>
