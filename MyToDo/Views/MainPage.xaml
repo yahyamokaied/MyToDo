@@ -4,7 +4,7 @@
              x:Class="MyToDo.Views.MainPage">
 
     <NavigationPage.TitleView>
-        <Button Text="+" Clicked="Btn_GoToAddTask" FontSize="Large" HorizontalOptions="End" Opacity="1" BackgroundColor="Transparent"/>
+        <Button Text="+" Clicked="Btn_GoToAddTask" FontSize="12"  HorizontalOptions="End" Opacity="1" BackgroundColor="Transparent"/>
     </NavigationPage.TitleView>
     <StackLayout>
 <Button Text="Add Task" Clicked="Btn_GoToAddTask"/>

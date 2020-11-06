@@ -12,7 +12,7 @@ namespace MyToDo.Views
             InitializeComponent();
 
             //BindingContext = new AddTaskModel();
-            this.BindingContext = new ViewModels.MainPageViewModel();
+            this.BindingContext = new ViewModels.AddTaskViewModel();
         }
 
         void Btn_GoToHome(System.Object sender, System.EventArgs e)
