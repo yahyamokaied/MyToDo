@@ -628,19 +628,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/yahyamokaied/.nuget/packages/": {}
+    "/Users/muhannadsayedabdullah/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/yahyamokaied/Projects/MyToDo/MyToDo/MyToDo.csproj",
+      "projectUniqueName": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/MyToDo.csproj",
       "projectName": "MyToDo",
-      "projectPath": "/Users/yahyamokaied/Projects/MyToDo/MyToDo/MyToDo.csproj",
-      "packagesPath": "/Users/yahyamokaied/.nuget/packages/",
-      "outputPath": "/Users/yahyamokaied/Projects/MyToDo/MyToDo/obj/",
+      "projectPath": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/MyToDo.csproj",
+      "packagesPath": "/Users/muhannadsayedabdullah/.nuget/packages/",
+      "outputPath": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/yahyamokaied/.config/NuGet/NuGet.Config"
+        "/Users/muhannadsayedabdullah/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"

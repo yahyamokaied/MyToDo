@@ -4,11 +4,26 @@
              x:Class="MyToDo.Views.AddTask">
 
     <ContentPage.Content>
-        <!--<Button Text="Back To Home" Clicked="Btn_GoToHome"/>-->
+        <!--<Button Text="Back To Home" Clicked="Btn_GoToHome"/>
         <Label Text="{Binding Id}" HorizontalOptions="Start" 
 
-                   TextColor="Black" FontSize="Medium" /> 
-                  
+                   TextColor="Black" FontSize="Medium" />--> 
+        <StackLayout>
+            <Entry x:Name="taskNameInput" Placeholder="Enter the task name" Text="{Binding TaskName}"/>
+            <Label x:Name="testTask " Text="{Binding TaskName}" />
+            <DatePicker x:Name="taskDateInput"  Date="{Binding TaskDate}"  
+               Format="dd MMM, yyy"/>
+            <TimePicker x:Name="taskTimeInput" Time="{Binding TaskTime}" />
+              <Switch x:Name="prioInput" IsToggled="{Binding Prio}"/>
+                   
+               <Entry x:Name="guestInput" Placeholder="Enter a gust's name" Text="{Binding Guest}"/>
+
+               <Button x:Name="upload" Text="Save and go back " Clicked="Btn_save"/>
+           
+            <Label x:Name="testDate " Text="{Binding DateAndTime}" />
+            
+        </StackLayout>
+        
     </ContentPage.Content>
 
 </ContentPage>

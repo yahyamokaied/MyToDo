@@ -2,33 +2,35 @@
   <MonoDevelop.Ide.ItemProperties.MyToDo.Android PreferredExecutionTarget="Android.Pixel_2_API_28" />
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="MyToDo/Views/MainPage.xaml" Line="18" Column="28" />
-      <File FileName="MyToDo/ViewModels/MainPageViewModel.cs" Line="87" Column="2" />
-      <File FileName="MyToDo/Models/AddTaskModel.cs" Line="11" Column="49" />
-      <File FileName="MyToDo/Models/MainPageModel.cs" Line="9" Column="11" />
-      <File FileName="MyToDo/Models/BaseModel.cs" Line="4" Column="21" />
-      <File FileName="MyToDo/Views/AddTask.xaml" Line="11" Column="19" />
-      <File FileName="MyToDo/Views/AddTask.xaml.cs" Line="15" Column="70" />
+      <File FileName="MyToDo/Views/MainPage.xaml" Line="7" Column="51" />
+      <File FileName="MyToDo/ViewModels/MainPageViewModel.cs" Line="1" Column="1" />
+      <File FileName="MyToDo/ViewModels/AddTaskViewModel.cs" Line="144" Column="41" />
+      <File FileName="MyToDo/Models/AddTaskModel.cs" Line="8" Column="23" />
+      <File FileName="MyToDo/Views/AddTask.xaml" Line="21" Column="74" />
+      <File FileName="MyToDo/Views/AddTask.xaml.cs" Line="20" Column="41" />
+      <File FileName="MyToDo/App.xaml" />
+      <File FileName="MyToDo/App.xaml.cs" />
+      <File FileName="MyToDo/Models/MainPageModel.cs" />
+      <File FileName="MyToDo/obj/Debug/netstandard2.0/Views/AddTask.xaml.g.cs" />
+      <File FileName="MyToDo/Views/MainPage.xaml.cs" Line="25" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MyToDo" expanded="True">
             <Node name="MyToDo" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="AddTaskModel.cs" selected="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="ViewModels" expanded="True">
+                <Node name="AddTaskViewModel.cs" selected="True" />
               </Node>
-              <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="AddTask.xaml" expanded="True" />
                 <Node name="MainPage.xaml" expanded="True" />
               </Node>
+              <Node name="App.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

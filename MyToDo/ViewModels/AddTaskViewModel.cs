@@ -15,16 +15,88 @@ namespace MyToDo.ViewModels
         {
             task = new AddTaskModel
             {
-                Id = "newId",
-                TaskName = "Cofee with Yahya",
-                Prio = "Highest",
-                Guest = "Jon"
-
+                Id = "",
+                TaskName = "",
+                Prio = false,
+                Guest = "",
+                TaskDate = DateTime.Now,
+                DateAndTime = "",
+                TaskTime = DateTime.Now
 
 
             };
         }
 
+
+        public DateTime TaskTime
+
+        {
+
+            get
+            {
+                return task.TaskTime.Date;
+            }
+            //get { return task.TaskDate.ToString(@"dd\/M\/yy");}
+            set
+            {
+                task.TaskTime = value;
+                //string s2 = TaskDate.ToString("dd/MM/yyyy");
+                OnPropertyChanged("TaskTime");
+
+            }
+        }
+
+
+        public string DateAndTime
+
+        {
+            
+            get
+            {
+                string txt =
+                    task.TaskDate.ToShortDateString() + task.TaskTime.ToShortTimeString();
+                return txt
+                    ;
+            }
+            //get { return task.TaskDate.ToString(@"dd\/M\/yy");}
+            set
+            {
+                task.DateAndTime = value;
+                //string s2 = TaskDate.ToString("dd/MM/yyyy");
+                OnPropertyChanged("DateAndTime");
+
+            }
+        }
+
+        public DateTime TaskDate
+
+        {
+            get { 
+                return 
+                    task.TaskDate.Date;
+                    }
+            //get { return task.TaskDate.ToString(@"dd\/M\/yy");}
+            set
+            {
+                task.TaskDate = value;
+                //string s2 = TaskDate.ToString("dd/MM/yyyy");
+                OnPropertyChanged("TaskDate");
+
+            }
+        }
+        /*
+        public string TaskDate
+        {
+            get { return task.TaskDate; }
+            set
+            {
+                task.TaskDate = value;
+                //string s2 = TaskDate.ToString("dd/MM/yyyy");
+                OnPropertyChanged("TaskDate");
+
+            }
+        }
+        */
         public string Id
         {
             get { return task.Id; }
@@ -42,11 +114,11 @@ namespace MyToDo.ViewModels
             {
                 task.TaskName = value;
                 OnPropertyChanged("TaskName");
-
+               
             }
         }
 
-        public string Prio
+        public Boolean Prio
         {
             get { return task.Prio; }
             set
@@ -65,6 +137,11 @@ namespace MyToDo.ViewModels
                 OnPropertyChanged("Guest");
 
             }
+        }
+
+        void Btn_save(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PopToRootAsync();
         }
     }
 }
