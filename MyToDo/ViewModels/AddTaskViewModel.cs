@@ -3,19 +3,41 @@
 using System.ComponentModel;
 using Xamarin.Forms;
 using MyToDo.Models;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Input;
+using MyToDo.Services;
+using SQLite;
+using System.Threading.Tasks;
+
 namespace MyToDo.ViewModels
 {
     public class AddTaskViewModel : BaseViewModel
+
     {
-        private AddTaskModel task;
+        
+        /*
+        public AddTaskViewModel()//INavigationService navigation)   
+        {
+            System.Diagnostics.Debug.WriteLine("iam live " + task);
+            
+        //);
+        }
+        */
+
+        public ICommand BtnSave { get; set; }
+        public AddTaskModel task;
+        private AddTaskModel newTask;
 
         //public event PropertyChangedEventHandler PropertyChanged;
 
-        public AddTaskViewModel()
+        public AddTaskViewModel(INavigationService navigation)
         {
+            string DBPath = Database.DBPath;
+            SQLiteConnection db = new SQLiteConnection(DBPath);
             task = new AddTaskModel
             {
-                Id = "",
+                
                 TaskName = "",
                 Prio = false,
                 Guest = "",
@@ -25,8 +47,49 @@ namespace MyToDo.ViewModels
 
 
             };
+
+            BtnSave = new Command(
+                 async() =>
+                 //(async () =>
+                 {
+                     
+                    
+                     db.CreateTable<AddTaskModel>();
+                     var maxPk = db.Table<AddTaskModel>().OrderByDescending(t => t.Id).FirstOrDefault();
+
+                     newTask = new AddTaskModel
+                     {
+                         Id = (maxPk == null ? 1 : maxPk.Id+1),
+                        Prio = task.Prio,
+                         Guest = task.Guest,
+                         TaskName = task.TaskName,
+                         TaskDate = task.TaskDate,
+                         TaskTime = task.TaskTime
+
+
+                     };
+                     db.Insert(newTask);
+                     //await DisplayAlert("Alert", " Saved!!! ");
+                     //System.Diagnostics.Debug.WriteLine("the task is : " +  newTask.TaskName);
+                     //await navigation.PopAsync();
+
+                     
+                     //System.Diagnostics.Debug.WriteLine("the task is : " +  task.TaskName);
+                 });
         }
 
+        /*
+        private Task DisplayAlert(object p, string v1, string v2)
+        {
+            throw new NotImplementedException();
+        }
+        */
+        /*
+        private Task DisplayAlert()
+        {
+            throw new NotImplementedException();
+        }
+        */
 
         public DateTime TaskTime
 
@@ -36,7 +99,7 @@ namespace MyToDo.ViewModels
             {
                 return task.TaskTime.Date;
             }
-            //get { return task.TaskDate.ToString(@"dd\/M\/yy");}
+            
             set
             {
 
@@ -46,41 +109,12 @@ namespace MyToDo.ViewModels
 
 
                 task.TaskTime = value;
-               // System.Console.WriteLine("iam here"+value);
-                //string s2 = TaskDate.ToString("dd/MM/yyyy");
+              
                 OnPropertyChanged();
 
             }
         }
 
-        /*
-        public string DateAndTime
-
-        {
-            
-            get
-            {
-                string txt =
-                    task.TaskDate.ToShortDateString() + task.TaskTime.ToShortTimeString();
-                return txt
-                    ;
-            }
-            //get { return task.TaskDate.ToString(@"dd\/M\/yy");}
-            set
-            {
-                System.Diagnostics.Debug.WriteLine("hello from date and time" + value);
-
-                if (value.Equals(task.TaskTime.Date)) return;
-
-
-                task.DateAndTime = value;
-                //System.Console.WriteLine("iam here" + value);
-                //string s2 = TaskDate.ToString("dd/MM/yyyy");
-                OnPropertyChanged();
-
-            }
-        }
-        */
         public DateTime TaskDate
 
         {
@@ -102,20 +136,9 @@ namespace MyToDo.ViewModels
 
             }
         }
+        
         /*
-        public string TaskDate
-        {
-            get { return task.TaskDate; }
-            set
-            {
-                task.TaskDate = value;
-                //string s2 = TaskDate.ToString("dd/MM/yyyy");
-                OnPropertyChanged("TaskDate");
-
-            }
-        }
-        */
-        public string Id
+        public int Id
         {
             get { return task.Id; }
             set
@@ -125,6 +148,7 @@ namespace MyToDo.ViewModels
 
             }
         }
+        */
         public string TaskName
         {
             get { return task.TaskName; }
@@ -166,9 +190,11 @@ namespace MyToDo.ViewModels
                 task.Guest = value;
                 OnPropertyChanged();
 
+                
             }
         }
-
         
+       
+
     }
 }

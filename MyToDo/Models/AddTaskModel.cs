@@ -1,9 +1,12 @@
 ﻿using System;
+using SQLite;
+
 namespace MyToDo.Models
 {
     public class AddTaskModel
     {
-        public string Id { get; set; }
+        [PrimaryKey]
+        public int Id { get; set; }
         public string TaskName { get; set; }
         public Boolean Prio { get; set; }
         public string Guest { get; set; }
@@ -12,7 +15,7 @@ namespace MyToDo.Models
         public DateTime TaskTime { get; set; }
         //TaskTime
         public string TaskInfo()
-        { return $"{TaskName} {Prio} {Guest}"; }
+        { return $"{TaskName} {Prio} {Guest} {TaskDate}{TaskTime}"; }
 
 
 

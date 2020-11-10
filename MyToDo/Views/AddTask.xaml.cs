@@ -19,11 +19,12 @@ namespace MyToDo.Views
         {
             Navigation.PopToRootAsync();
         }
-        
+        /*
         void Btn_save(System.Object sender, System.EventArgs e)
         {
             Navigation.PopToRootAsync();
         }
+        */
         
     }
 }
