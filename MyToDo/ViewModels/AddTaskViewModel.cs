@@ -31,8 +31,9 @@ namespace MyToDo.ViewModels
 
         //public event PropertyChangedEventHandler PropertyChanged;
 
-        public AddTaskViewModel(INavigationService navigation)
+        public AddTaskViewModel()
         {
+            // INavigationService navigation
             string DBPath = Database.DBPath;
             SQLiteConnection db = new SQLiteConnection(DBPath);
             task = new AddTaskModel
@@ -69,6 +70,9 @@ namespace MyToDo.ViewModels
 
                      };
                      db.Insert(newTask);
+                     // :
+
+                     // fix the alert :)
                      //await DisplayAlert("Alert", " Saved!!! ");
                      //System.Diagnostics.Debug.WriteLine("the task is : " +  newTask.TaskName);
                      //await navigation.PopAsync();
@@ -164,7 +168,7 @@ namespace MyToDo.ViewModels
             }
         }
 
-        public Boolean Prio
+        public bool Prio
         {
             get { return task.Prio; }
             set

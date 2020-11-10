@@ -10,6 +10,7 @@
 <Button Text="Add Task" Clicked="Btn_GoToAddTask"/>
 
         <Label Text="Here is your tasks" />
+        <!--
         <Label Text="{Binding DateTime, StringFormat='{0:T}'}"
            FontSize="Large"
            HorizontalOptions="Center"
@@ -18,6 +19,9 @@
             <local:MainPageViewModel />
         </Label.BindingContext>
     </Label>
+        -->
+        <Button x:Name="testDB" Command="{Binding Path=BtnLoad}"/>
+        <ListView x:Name="lv"/>
     </StackLayout>
 
 </ContentPage>
