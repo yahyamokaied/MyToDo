@@ -10,13 +10,13 @@
                    TextColor="Black" FontSize="Medium" />--> 
         <StackLayout>
             <Entry x:Name="taskNameInput" Placeholder="Enter the task name" Text="{Binding TaskName}"/>
-            <Label x:Name="testTask " Text="{Binding TaskName}" />
-            <DatePicker x:Name="taskDateInput"  Date="{Binding TaskDate}"  
+            <Label x:Name="testTask " Text="{Binding Path=TaskName}" />
+            <DatePicker x:Name="taskDateInput"  Date="{Binding Path=TaskDate}"  
                Format="dd MMM, yyy"/>
-            <TimePicker x:Name="taskTimeInput" Time="{Binding TaskTime}" />
-              <Switch x:Name="prioInput" IsToggled="{Binding Prio}"/>
+            <TimePicker x:Name="taskTimeInput" Time="{Binding Path=TaskTime}" />
+              <Switch x:Name="prioInput" IsToggled="{Binding Path=Prio}"/>
                    
-               <Entry x:Name="guestInput" Placeholder="Enter a gust's name" Text="{Binding Guest}"/>
+               <Entry x:Name="guestInput" Placeholder="Enter a gust's name" Text="{Binding Path=Guest}"/>
 
                <Button x:Name="upload" Text="Save and go back " Clicked="Btn_save"/>
            

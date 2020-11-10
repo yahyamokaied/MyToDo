@@ -928,3 +928,11 @@
 /Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.Android/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.Android/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
+/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.Android/obj/Debug/android/assets/SQLite-net.dll
+/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.Android/obj/Debug/android/assets/SQLitePCLRaw.batteries_v2.dll
+/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.Android/obj/Debug/android/assets/SQLitePCLRaw.core.dll
+/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.Android/obj/Debug/android/assets/SQLitePCLRaw.lib.e_sqlite3.android.dll
+/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.Android/obj/Debug/android/assets/SQLitePCLRaw.provider.e_sqlite3.dll
+/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.Android/obj/Debug/android/assets/System.Buffers.dll
+/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.Android/obj/Debug/android/assets/System.Memory.dll
+/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.Android/obj/Debug/android/assets/System.Runtime.CompilerServices.Unsafe.dll

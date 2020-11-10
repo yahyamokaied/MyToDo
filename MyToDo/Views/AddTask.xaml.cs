@@ -12,12 +12,18 @@ namespace MyToDo.Views
             InitializeComponent();
 
             //BindingContext = new AddTaskModel();
-            this.BindingContext = new ViewModels.AddTaskViewModel();
+            BindingContext = new ViewModels.AddTaskViewModel();
         }
 
         void Btn_GoToHome(System.Object sender, System.EventArgs e)
         {
             Navigation.PopToRootAsync();
         }
+        
+        void Btn_save(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PopToRootAsync();
+        }
+        
     }
 }

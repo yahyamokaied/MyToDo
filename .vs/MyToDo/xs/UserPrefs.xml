@@ -1,28 +1,31 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{B0CAE0C6-931C-443E-ADCA-239467FF01AB}|Default">
   <MonoDevelop.Ide.ItemProperties.MyToDo.Android PreferredExecutionTarget="Android.Pixel_2_API_28" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyToDo/Models/BaseModel.cs">
     <Files>
       <File FileName="MyToDo/Views/MainPage.xaml" Line="7" Column="51" />
       <File FileName="MyToDo/ViewModels/MainPageViewModel.cs" Line="1" Column="1" />
-      <File FileName="MyToDo/ViewModels/AddTaskViewModel.cs" Line="144" Column="41" />
-      <File FileName="MyToDo/Models/AddTaskModel.cs" Line="8" Column="23" />
+      <File FileName="MyToDo/ViewModels/AddTaskViewModel.cs" Line="8" Column="46" />
+      <File FileName="MyToDo/Models/AddTaskModel.cs" Line="19" Column="8" />
       <File FileName="MyToDo/Views/AddTask.xaml" Line="21" Column="74" />
-      <File FileName="MyToDo/Views/AddTask.xaml.cs" Line="20" Column="41" />
+      <File FileName="MyToDo/Views/AddTask.xaml.cs" Line="25" Column="41" />
       <File FileName="MyToDo/App.xaml" />
       <File FileName="MyToDo/App.xaml.cs" />
       <File FileName="MyToDo/Models/MainPageModel.cs" />
       <File FileName="MyToDo/obj/Debug/netstandard2.0/Views/AddTask.xaml.g.cs" />
       <File FileName="MyToDo/Views/MainPage.xaml.cs" Line="25" Column="10" />
+      <File FileName="MyToDo/ViewModels/BaseViewModel.cs" Line="28" Column="6" />
+      <File FileName="MyToDo/Models/BaseModel.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MyToDo" expanded="True">
             <Node name="MyToDo" expanded="True">
-              <Node name="Models" expanded="True" />
-              <Node name="ViewModels" expanded="True">
-                <Node name="AddTaskViewModel.cs" selected="True" />
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="BaseModel.cs" selected="True" />
               </Node>
+              <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="AddTask.xaml" expanded="True" />
                 <Node name="MainPage.xaml" expanded="True" />
