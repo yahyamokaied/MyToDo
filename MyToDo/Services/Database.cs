@@ -42,11 +42,12 @@ namespace MyToDo.Services
         {
             return DB.Table<AddTaskModel>().ToListAsync();
         }
-
+        /*
         public Task<List<AddTaskModel>> GetItemsNotDoneAsync()
         {
             return DB.QueryAsync<AddTaskModel>("SELECT * FROM [TodoItem] WHERE [Done] = 0");
         }
+        */
 
         public Task<AddTaskModel> GetItemAsync(int id)
         {
@@ -62,13 +63,15 @@ namespace MyToDo.Services
             else
             {
                 return DB.InsertAsync(item);
+               
             }
         }
-
+        /*
         public Task<int> DeleteItemAsync(AddTaskModel item)
         {
             return DB.DeleteAsync(item);
         }
+        */
 
         //public static string DBPath = Path.Combine(Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "myDB.db3");
 

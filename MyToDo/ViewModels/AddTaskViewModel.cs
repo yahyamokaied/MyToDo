@@ -16,26 +16,17 @@ namespace MyToDo.ViewModels
 
     {
         
-        /*
-        public AddTaskViewModel()//INavigationService navigation)   
-        {
-            System.Diagnostics.Debug.WriteLine("iam live " + task);
-            
-        //);
-        }
-        */
+       
 
         public ICommand BtnSave { get; set; }
         public AddTaskModel task;
         private AddTaskModel newTask;
 
-        //public event PropertyChangedEventHandler PropertyChanged;
+        
 
         public AddTaskViewModel()
         {
-            // INavigationService navigation
-            string DBPath = Database.DBPath;
-            SQLiteConnection db = new SQLiteConnection(DBPath);
+            
             task = new AddTaskModel
             {
                 
@@ -43,7 +34,7 @@ namespace MyToDo.ViewModels
                 Prio = false,
                 Guest = "",
                 TaskDate = DateTime.Now,
-               // DateAndTime = "",
+               
                 TaskTime = DateTime.Now
 
 
@@ -51,49 +42,32 @@ namespace MyToDo.ViewModels
 
             BtnSave = new Command(
                  async() =>
-                 //(async () =>
+                 
                  {
                      
                     
-                     db.CreateTable<AddTaskModel>();
-                     var maxPk = db.Table<AddTaskModel>().OrderByDescending(t => t.Id).FirstOrDefault();
+                     
 
                      newTask = new AddTaskModel
                      {
-                         Id = (maxPk == null ? 1 : maxPk.Id+1),
+                         
                         Prio = task.Prio,
                          Guest = task.Guest,
                          TaskName = task.TaskName,
                          TaskDate = task.TaskDate,
-                         TaskTime = task.TaskTime
+                         TaskTime = task.TaskTime,
+                        
 
 
                      };
-                     db.Insert(newTask);
-                     // :
-
-                     // fix the alert :)
-                     //await DisplayAlert("Alert", " Saved!!! ");
-                     //System.Diagnostics.Debug.WriteLine("the task is : " +  newTask.TaskName);
-                     //await navigation.PopAsync();
 
                      
-                     //System.Diagnostics.Debug.WriteLine("the task is : " +  task.TaskName);
+                     await App.Database.SaveItemAsync(newTask);
+                     
                  });
         }
 
-        /*
-        private Task DisplayAlert(object p, string v1, string v2)
-        {
-            throw new NotImplementedException();
-        }
-        */
-        /*
-        private Task DisplayAlert()
-        {
-            throw new NotImplementedException();
-        }
-        */
+        
 
         public DateTime TaskTime
 
@@ -126,7 +100,7 @@ namespace MyToDo.ViewModels
                 return 
                     task.TaskDate.Date;
                     }
-            //get { return task.TaskDate.ToString(@"dd\/M\/yy");}
+            
             set
             {
                 System.Diagnostics.Debug.WriteLine("hello from date" + value);
@@ -134,25 +108,13 @@ namespace MyToDo.ViewModels
                 task.TaskDate = value;
                     
 
-               // task.TaskDate = value;
-                //string s2 = TaskDate.ToString("dd/MM/yyyy");
+              
                 OnPropertyChanged();
 
             }
         }
         
-        /*
-        public int Id
-        {
-            get { return task.Id; }
-            set
-            {
-                task.Id = value;
-                OnPropertyChanged("Id");
-
-            }
-        }
-        */
+        
         public string TaskName
         {
             get { return task.TaskName; }
@@ -162,7 +124,7 @@ namespace MyToDo.ViewModels
                 if (value.Equals(task.TaskName)) return;
 
                 task.TaskName = value;
-                //System.Console.WriteLine("iam here" + value);
+                
                 OnPropertyChanged();
                
             }

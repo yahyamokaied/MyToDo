@@ -21,7 +21,7 @@
     </Label>
         -->
         <Button x:Name="testDB" Command="{Binding Path=BtnLoad}"/>
-        <ListView x:Name="lv"/>
+        <ListView x:Name="lv" ItemSelected="OnListItemSelected" />
     </StackLayout>
 
 </ContentPage>

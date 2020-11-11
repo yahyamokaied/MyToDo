@@ -30,18 +30,24 @@ namespace MyToDo.Views
             Navigation.PushAsync(new AddTask());
         }
 
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
-            //base.OnAppearing();
+            base.OnAppearing();
 
-            string DBPath = Database.DBPath;
-            SQLiteConnection db = new SQLiteConnection(DBPath);
+            lv.ItemsSource = await App.Database.GetItemsAsync();
 
-            //void getData()
-           // {
-                lv = new ListView();
-                lv.ItemsSource = db.Table<AddTaskModel>().OrderBy(t => t.TaskName).ToList();
-            //};
+            
+        }
+
+        async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem != null)
+            {
+                await Navigation.PushAsync(new AddTask()
+                {
+                    BindingContext = e.SelectedItem as AddTaskModel
+                });
+            }
         }
     }
 

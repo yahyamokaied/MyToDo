@@ -3,16 +3,16 @@
   <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="MyToDo/Views/MainPage.xaml" Line="24" Column="32" />
-      <File FileName="MyToDo/ViewModels/MainPageViewModel.cs" />
-      <File FileName="MyToDo/ViewModels/AddTaskViewModel.cs" Line="171" Column="20" />
+      <File FileName="MyToDo/ViewModels/MainPageViewModel.cs" Line="27" Column="14" />
+      <File FileName="MyToDo/ViewModels/AddTaskViewModel.cs" Line="36" Column="45" />
       <File FileName="MyToDo/Models/AddTaskModel.cs" Line="11" Column="20" />
       <File FileName="MyToDo/Views/AddTask.xaml" />
-      <File FileName="MyToDo/Views/AddTask.xaml.cs" />
+      <File FileName="MyToDo/Views/AddTask.xaml.cs" Line="22" Column="11" />
       <File FileName="MyToDo/App.xaml" />
       <File FileName="MyToDo/App.xaml.cs" Line="26" Column="44" />
       <File FileName="MyToDo/Models/MainPageModel.cs" />
       <File FileName="MyToDo/obj/Debug/netstandard2.0/Views/AddTask.xaml.g.cs" />
-      <File FileName="MyToDo/Views/MainPage.xaml.cs" Line="17" Column="11" />
+      <File FileName="MyToDo/Views/MainPage.xaml.cs" Line="42" Column="18" />
       <File FileName="MyToDo/ViewModels/BaseViewModel.cs" />
       <File FileName="MyToDo/Models/BaseModel.cs" />
       <File FileName="MyToDo/Services/INavigationService.cs" />
@@ -27,15 +27,16 @@
             <Node name="MyToDo" expanded="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="Database.cs" selected="True" />
-              </Node>
+              <Node name="Services" expanded="True" />
               <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="AddTask.xaml" expanded="True" />
                 <Node name="MainPage.xaml" expanded="True" />
               </Node>
               <Node name="App.xaml" expanded="True" />
+            </Node>
+            <Node name="MyToDo.Android" expanded="True">
+              <Node name="ConnectedServicesFolder" selected="True" />
             </Node>
           </Node>
         </State>
