@@ -2195,20 +2195,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/muhannadsayedabdullah/.nuget/packages/": {}
+    "/Users/yahyamokaied/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.Android/MyToDo.Android.csproj",
+      "projectUniqueName": "/Users/yahyamokaied/Projects/MyToDo/MyToDo.Android/MyToDo.Android.csproj",
       "projectName": "MyToDo.Android",
-      "projectPath": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.Android/MyToDo.Android.csproj",
-      "packagesPath": "/Users/muhannadsayedabdullah/.nuget/packages/",
-      "outputPath": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.Android/obj/",
+      "projectPath": "/Users/yahyamokaied/Projects/MyToDo/MyToDo.Android/MyToDo.Android.csproj",
+      "packagesPath": "/Users/yahyamokaied/.nuget/packages/",
+      "outputPath": "/Users/yahyamokaied/Projects/MyToDo/MyToDo.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/muhannadsayedabdullah/.config/NuGet/NuGet.Config"
+        "/Users/yahyamokaied/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid90"
@@ -2219,8 +2219,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/MyToDo.csproj": {
-              "projectPath": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/MyToDo.csproj"
+            "/Users/yahyamokaied/Projects/MyToDo/MyToDo/MyToDo.csproj": {
+              "projectPath": "/Users/yahyamokaied/Projects/MyToDo/MyToDo/MyToDo.csproj"
             }
           }
         }

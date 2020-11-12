@@ -23,7 +23,7 @@ namespace MyToDo.Models
             string date = TaskDate.Date.ToShortDateString();
             //string time = TaskTime.Date.ToShortTimeString();
             //int minu = TaskTime.Minutes;
-            return this.TaskName + "\r(" + date +  "\rWith " + Guest + ")";
+            return this.TaskName + "\r\n(" + date + "\r\nWith " + Guest + ")";
            // return base.ToString();
         }
 

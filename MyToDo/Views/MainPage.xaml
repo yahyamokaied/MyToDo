@@ -7,57 +7,85 @@
     <NavigationPage.TitleView>
 
         <Button Text=" + " Clicked="Btn_GoToAddTask" Font="Bold,26"
-                BackgroundColor="{OnPlatform Android=White, iOS=Orange, UWP=Purple}"
-                TextColor="#ff2469"
+                BackgroundColor="{OnPlatform Android=White, iOS=DarkBlue, UWP=Purple}"
+                TextColor="DarkOrange"
                 WidthRequest="40" HeightRequest="40" BorderRadius="20"
                 HorizontalOptions="End" Opacity="1"
                 Margin="2" Padding="2"
         />
     </NavigationPage.TitleView>
 
-    <StackLayout>
+    <StackLayout Margin="20">
 
-    <Label Text="  TASKS  " Font="Bold,22" Margin="6" Padding="6"
+    <Label Text="  TASKS  " Font="Bold,20" Margin="6" Padding="6"
            HorizontalOptions="Center" VerticalOptions="Center"
-           BackgroundColor="LimeGreen" TextColor="White"
+           BackgroundColor="DarkOrange" TextColor="White"
     />
         <!--
         <Button x:Name="testDB" Command="{Binding Path=BtnLoad}"/>
         -->
 
-        <ListView
-            x:Name="lv" SeparatorColor="LimeGreen"
+        <ListView HasUnevenRows="True"
+            x:Name="lv" SeparatorColor="Orange"
             ItemSelected="OnListItemSelected">
 
-        
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                <ViewCell>
-                    <StackLayout BackgroundColor="Beige"
-                                 Orientation="Vertical">
-                        <StackLayout Orientation="Horizontal">
-                            <Label Text="{Binding TaskName}"
-                                   TextColor="BlueViolet"
-                                   FontSize="Large"
-                                   FontAttributes="Bold"
-                                   />
-                            <Label Text="{Binding TaskDate}"
-                                       TextColor="Tomato"
-                                       FontSize="Medium"/>
-                            
-                                         
-                        </StackLayout>
-                         </StackLayout>
-                    
-                                 
-                        
-                       
-                </ViewCell>
-            </DataTemplate>
-            </ListView.ItemTemplate>
-            
-            </ListView>
+<ListView.ItemTemplate>
+<DataTemplate>
+<ViewCell>
+<StackLayout Orientation="Vertical">
 
+    <StackLayout Orientation="Horizontal">
+<Label Text="{Binding TaskName}" TextColor="DarkBlue" FontSize="Large" FontAttributes="Bold"/>
+
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal">
+<Label Text="{Binding TaskDate}" TextColor="Blue" FontSize="Medium" HorizontalOptions="Fill"  Margin="5"/>
+
+    </StackLayout>
+
+
+
+
+
+</StackLayout>
+</ViewCell>
+</DataTemplate>
+</ListView.ItemTemplate>
+</ListView>
+
+
+
+        <!--
+
+        <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+
+                <StackLayout BackgroundColor="Beige"
+                                Orientation="Vertical">
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <Label Text="{Binding TaskName}"
+                                TextColor="#ff2469"
+                                FontSize="Large"
+                                FontAttributes="Bold"
+                        />
+                        <Label Text="{Binding TaskDate}"
+                                    TextColor="DeepPink"
+                                    FontSize="Medium"
+                        />
+                    </StackLayout>
+
+                 </StackLayout>
+                    
+                    </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+            
+        </ListView>
+
+            -->
     </StackLayout>
 
 </ContentPage>

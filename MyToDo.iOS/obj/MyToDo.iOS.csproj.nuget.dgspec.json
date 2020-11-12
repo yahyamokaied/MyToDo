@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.iOS/MyToDo.iOS.csproj": {}
+    "/Users/yahyamokaied/Projects/MyToDo/MyToDo.iOS/MyToDo.iOS.csproj": {}
   },
   "projects": {
-    "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.iOS/MyToDo.iOS.csproj": {
+    "/Users/yahyamokaied/Projects/MyToDo/MyToDo.iOS/MyToDo.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.iOS/MyToDo.iOS.csproj",
+        "projectUniqueName": "/Users/yahyamokaied/Projects/MyToDo/MyToDo.iOS/MyToDo.iOS.csproj",
         "projectName": "MyToDo.iOS",
-        "projectPath": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.iOS/MyToDo.iOS.csproj",
-        "packagesPath": "/Users/muhannadsayedabdullah/.nuget/packages/",
-        "outputPath": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.iOS/obj/",
+        "projectPath": "/Users/yahyamokaied/Projects/MyToDo/MyToDo.iOS/MyToDo.iOS.csproj",
+        "packagesPath": "/Users/yahyamokaied/.nuget/packages/",
+        "outputPath": "/Users/yahyamokaied/Projects/MyToDo/MyToDo.iOS/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "/Users/muhannadsayedabdullah/.config/NuGet/NuGet.Config"
+          "/Users/yahyamokaied/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"
@@ -26,8 +26,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/MyToDo.csproj": {
-                "projectPath": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/MyToDo.csproj"
+              "/Users/yahyamokaied/Projects/MyToDo/MyToDo/MyToDo.csproj": {
+                "projectPath": "/Users/yahyamokaied/Projects/MyToDo/MyToDo/MyToDo.csproj"
               }
             }
           }
@@ -67,17 +67,17 @@
         }
       }
     },
-    "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/MyToDo.csproj": {
+    "/Users/yahyamokaied/Projects/MyToDo/MyToDo/MyToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/MyToDo.csproj",
+        "projectUniqueName": "/Users/yahyamokaied/Projects/MyToDo/MyToDo/MyToDo.csproj",
         "projectName": "MyToDo",
-        "projectPath": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/MyToDo.csproj",
-        "packagesPath": "/Users/muhannadsayedabdullah/.nuget/packages/",
-        "outputPath": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/obj/",
+        "projectPath": "/Users/yahyamokaied/Projects/MyToDo/MyToDo/MyToDo.csproj",
+        "packagesPath": "/Users/yahyamokaied/.nuget/packages/",
+        "outputPath": "/Users/yahyamokaied/Projects/MyToDo/MyToDo/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/muhannadsayedabdullah/.config/NuGet/NuGet.Config"
+          "/Users/yahyamokaied/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"

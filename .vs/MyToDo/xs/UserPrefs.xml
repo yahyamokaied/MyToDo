@@ -1,28 +1,21 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{B0CAE0C6-931C-443E-ADCA-239467FF01AB}|Default">
-  <MonoDevelop.Ide.ItemProperties.MyToDo.Android PreferredExecutionTarget="Android.Pixel_2_API_28" />
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{20146B5A-A18C-4CB8-BE55-31ED03E3827F}|Default">
+  <MonoDevelop.Ide.ItemProperties.MyToDo.Android PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
   <MonoDevelop.Ide.Workbench>
-    <Files>
-      <File FileName="MyToDo/Models/AddTaskModel.cs" Line="15" Column="9" />
-      <File FileName="MyToDo/ViewModels/AddTaskViewModel.cs" Line="102" Column="40" />
-      <File FileName="MyToDo/Views/AddTask.xaml.cs" Line="50" Column="53" />
-      <File FileName="MyToDo/Views/AddTask.xaml" Line="48" Column="13" />
-      <File FileName="MyToDo/Views/MainPage.xaml" Line="42" Column="57" />
-    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MyToDo" expanded="True">
             <Node name="MyToDo" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True" />
-              <Node name="ViewModels" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="AddTask.xaml" expanded="True" />
-                <Node name="MainPage.xaml" selected="True" />
+              <Node name="Views" expanded="True" />
+            </Node>
+            <Node name="MyToDo.Android" expanded="True">
+              <Node name="Assets" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="values" expanded="True" />
+                <Node name="AboutResources.txt" selected="True" />
               </Node>
             </Node>
-            <Node name="MyToDo.Android" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -30,6 +23,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.MyToDo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.0D2C1748-12BB-49B4-B97B-D2B8F972FF1A" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
