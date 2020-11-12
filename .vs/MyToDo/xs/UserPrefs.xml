@@ -1,51 +1,29 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{B0CAE0C6-931C-443E-ADCA-239467FF01AB}|Default">
-  <MonoDevelop.Ide.ItemProperties.MyToDo.Android PreferredExecutionTarget="Android.Pixel_2_API_28" />
+  <MonoDevelop.Ide.ItemProperties.MyToDo.Android PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
   <MonoDevelop.Ide.Workbench>
-    <Files>
-      <File FileName="MyToDo/Views/MainPage.xaml" Line="24" Column="32" />
-      <File FileName="MyToDo/ViewModels/MainPageViewModel.cs" Line="27" Column="14" />
-      <File FileName="MyToDo/ViewModels/AddTaskViewModel.cs" Line="36" Column="45" />
-      <File FileName="MyToDo/Models/AddTaskModel.cs" Line="11" Column="20" />
-      <File FileName="MyToDo/Views/AddTask.xaml" />
-      <File FileName="MyToDo/Views/AddTask.xaml.cs" Line="22" Column="11" />
-      <File FileName="MyToDo/App.xaml" />
-      <File FileName="MyToDo/App.xaml.cs" Line="26" Column="44" />
-      <File FileName="MyToDo/Models/MainPageModel.cs" />
-      <File FileName="MyToDo/obj/Debug/netstandard2.0/Views/AddTask.xaml.g.cs" />
-      <File FileName="MyToDo/Views/MainPage.xaml.cs" Line="42" Column="18" />
-      <File FileName="MyToDo/ViewModels/BaseViewModel.cs" />
-      <File FileName="MyToDo/Models/BaseModel.cs" />
-      <File FileName="MyToDo/Services/INavigationService.cs" />
-      <File FileName="MyToDo/Services/Database.cs" Line="26" Column="35" />
-      <File FileName="MyToDo/Services/Constants.cs" Line="6" Column="1" />
-      <File FileName="MyToDo/Services/TaskExtensions.cs" Line="10" Column="19" />
-    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MyToDo" expanded="True">
             <Node name="MyToDo" expanded="True">
-              <Node name="Dependencies" expanded="True" />
               <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True" />
               <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="AddTask.xaml" expanded="True" />
+                <Node name="AddTask.xaml" expanded="True">
+                  <Node name="AddTask.xaml.cs" selected="True" />
+                </Node>
                 <Node name="MainPage.xaml" expanded="True" />
               </Node>
-              <Node name="App.xaml" expanded="True" />
             </Node>
-            <Node name="MyToDo.Android" expanded="True">
-              <Node name="ConnectedServicesFolder" selected="True" />
-            </Node>
+            <Node name="MyToDo.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
-  <MonoDevelop.Ide.ItemProperties.MyToDo.iOS FirstBuild="True" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.86e776950e6b88e08b9bcd2ed40bfe8ac079c5ba" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.MyToDo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.0D2C1748-12BB-49B4-B97B-D2B8F972FF1A" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

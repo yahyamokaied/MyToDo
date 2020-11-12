@@ -1,27 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:MyToDo.ViewModels"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyToDo.ViewModels"
              x:Class="MyToDo.Views.MainPage">
 
     <NavigationPage.TitleView>
-        <Button Text="+" Clicked="Btn_GoToAddTask" FontSize="12"  HorizontalOptions="End" Opacity="1" BackgroundColor="Transparent"/>
-    </NavigationPage.TitleView>
-    <StackLayout>
-<Button Text="Add Task" Clicked="Btn_GoToAddTask"/>
 
-        <Label Text="Here is your tasks" />
+        <Button Text=" + " Clicked="Btn_GoToAddTask" Font="Bold,26"
+                BackgroundColor="{OnPlatform Android=White, iOS=Orange, UWP=Purple}"
+                TextColor="#ff2469"
+                WidthRequest="40" HeightRequest="40" BorderRadius="20"
+                HorizontalOptions="End" Opacity="1"
+                Margin="2" Padding="2"
+        />
+    </NavigationPage.TitleView>
+
+    <StackLayout>
+
+    <Label Text="  TASKS  " Font="Bold,22" Margin="6" Padding="6"
+           HorizontalOptions="Center" VerticalOptions="Center"
+           BackgroundColor="LimeGreen" TextColor="White"
+    />
         <!--
-        <Label Text="{Binding DateTime, StringFormat='{0:T}'}"
-           FontSize="Large"
-           HorizontalOptions="Center"
-           VerticalOptions="Center">
-        <Label.BindingContext>
-            <local:MainPageViewModel />
-        </Label.BindingContext>
-    </Label>
-        -->
         <Button x:Name="testDB" Command="{Binding Path=BtnLoad}"/>
-        <ListView x:Name="lv" ItemSelected="OnListItemSelected" />
+        -->
+
+        <ListView
+            x:Name="lv" SeparatorColor="LimeGreen"
+            ItemSelected="OnListItemSelected" />
+
     </StackLayout>
 
 </ContentPage>
+
+
+
+

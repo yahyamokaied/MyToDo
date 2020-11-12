@@ -218,12 +218,22 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Contacts/1.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.ContactService.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.ContactService.dll": {}
+        }
+      },
       "MyToDo/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.6.0.1141",
+          "Xamarin.Forms.Contacts": "1.0.5",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -451,12 +461,22 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Contacts/1.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.ContactService.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.ContactService.dll": {}
+        }
+      },
       "MyToDo/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.6.0.1141",
+          "Xamarin.Forms.Contacts": "1.0.5",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -684,12 +704,22 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Contacts/1.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.ContactService.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.ContactService.dll": {}
+        }
+      },
       "MyToDo/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.6.0.1141",
+          "Xamarin.Forms.Contacts": "1.0.5",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -917,12 +947,22 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Contacts/1.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.ContactService.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.ContactService.dll": {}
+        }
+      },
       "MyToDo/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.6.0.1141",
+          "Xamarin.Forms.Contacts": "1.0.5",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -1423,6 +1463,25 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.Contacts/1.0.5": {
+      "sha512": "b6zcl9qSUfWH/PnZlEXphAYkNPsPsL7fhuf5KdgtiirI5N+Rr2d+90LPP6KPw6OJEEo4/XwLolwGG5kgD0DdZQ==",
+      "type": "package",
+      "path": "xamarin.forms.contacts/1.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Plugin.ContactService.dll",
+        "lib/MonoAndroid10/Plugin.ContactService.xml",
+        "lib/Xamarin.iOS10/Plugin.ContactService.dll",
+        "lib/Xamarin.iOS10/Plugin.ContactService.xml",
+        "lib/netstandard1.0/Plugin.ContactService.dll",
+        "lib/netstandard1.0/Plugin.ContactService.xml",
+        "lib/netstandard2.0/Plugin.ContactService.dll",
+        "lib/netstandard2.0/Plugin.ContactService.xml",
+        "xamarin.forms.contacts.1.0.5.nupkg.sha512",
+        "xamarin.forms.contacts.nuspec"
+      ]
+    },
     "MyToDo/1.0.0": {
       "type": "project",
       "path": "../MyToDo/MyToDo.csproj",
@@ -1434,24 +1493,25 @@
       "MyToDo >= 1.0.0",
       "Xamarin.Essentials >= 1.5.3.2",
       "Xamarin.Forms >= 4.6.0.1141",
+      "Xamarin.Forms.Contacts >= 1.0.5",
       "sqlite-net-pcl >= 1.7.335"
     ]
   },
   "packageFolders": {
-    "/Users/muhannadsayedabdullah/.nuget/packages/": {}
+    "/Users/yahyamokaied/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.iOS/MyToDo.iOS.csproj",
+      "projectUniqueName": "/Users/yahyamokaied/Projects/MyToDo/MyToDo.iOS/MyToDo.iOS.csproj",
       "projectName": "MyToDo.iOS",
-      "projectPath": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.iOS/MyToDo.iOS.csproj",
-      "packagesPath": "/Users/muhannadsayedabdullah/.nuget/packages/",
-      "outputPath": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.iOS/obj/",
+      "projectPath": "/Users/yahyamokaied/Projects/MyToDo/MyToDo.iOS/MyToDo.iOS.csproj",
+      "packagesPath": "/Users/yahyamokaied/.nuget/packages/",
+      "outputPath": "/Users/yahyamokaied/Projects/MyToDo/MyToDo.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/muhannadsayedabdullah/.config/NuGet/NuGet.Config"
+        "/Users/yahyamokaied/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -1462,8 +1522,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/MyToDo.csproj": {
-              "projectPath": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/MyToDo.csproj"
+            "/Users/yahyamokaied/Projects/MyToDo/MyToDo/MyToDo.csproj": {
+              "projectPath": "/Users/yahyamokaied/Projects/MyToDo/MyToDo/MyToDo.csproj"
             }
           }
         }
@@ -1479,6 +1539,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[4.6.0.1141, )"
+          },
+          "Xamarin.Forms.Contacts": {
+            "target": "Package",
+            "version": "[1.0.5, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",

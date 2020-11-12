@@ -5,9 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MyToDo.Models;
+using Xamarin.Essentials;
 using MyToDo.Services;
 using SQLite;
 using Xamarin.Forms;
+
 
 
 namespace MyToDo.Views
@@ -29,6 +31,7 @@ namespace MyToDo.Views
         {
             Navigation.PushAsync(new AddTask());
         }
+
 
         protected override async void OnAppearing()
         {

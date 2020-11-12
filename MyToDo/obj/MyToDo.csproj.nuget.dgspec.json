@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/MyToDo.csproj": {}
+    "/Users/yahyamokaied/Projects/MyToDo/MyToDo/MyToDo.csproj": {}
   },
   "projects": {
-    "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/MyToDo.csproj": {
+    "/Users/yahyamokaied/Projects/MyToDo/MyToDo/MyToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/MyToDo.csproj",
+        "projectUniqueName": "/Users/yahyamokaied/Projects/MyToDo/MyToDo/MyToDo.csproj",
         "projectName": "MyToDo",
-        "projectPath": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/MyToDo.csproj",
-        "packagesPath": "/Users/muhannadsayedabdullah/.nuget/packages/",
-        "outputPath": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/obj/",
+        "projectPath": "/Users/yahyamokaied/Projects/MyToDo/MyToDo/MyToDo.csproj",
+        "packagesPath": "/Users/yahyamokaied/.nuget/packages/",
+        "outputPath": "/Users/yahyamokaied/Projects/MyToDo/MyToDo/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/muhannadsayedabdullah/.config/NuGet/NuGet.Config"
+          "/Users/yahyamokaied/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -49,6 +49,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.6.0.1141, )"
+            },
+            "Xamarin.Forms.Contacts": {
+              "target": "Package",
+              "version": "[1.0.5, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",

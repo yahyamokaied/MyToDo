@@ -204,6 +204,15 @@
           "buildTransitive/Xamarin.Forms.props": {},
           "buildTransitive/Xamarin.Forms.targets": {}
         }
+      },
+      "Xamarin.Forms.Contacts/1.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Plugin.ContactService.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.ContactService.dll": {}
+        }
       }
     }
   },
@@ -917,6 +926,25 @@
         "xamarin.forms.4.6.0.1141.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "Xamarin.Forms.Contacts/1.0.5": {
+      "sha512": "b6zcl9qSUfWH/PnZlEXphAYkNPsPsL7fhuf5KdgtiirI5N+Rr2d+90LPP6KPw6OJEEo4/XwLolwGG5kgD0DdZQ==",
+      "type": "package",
+      "path": "xamarin.forms.contacts/1.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Plugin.ContactService.dll",
+        "lib/MonoAndroid10/Plugin.ContactService.xml",
+        "lib/Xamarin.iOS10/Plugin.ContactService.dll",
+        "lib/Xamarin.iOS10/Plugin.ContactService.xml",
+        "lib/netstandard1.0/Plugin.ContactService.dll",
+        "lib/netstandard1.0/Plugin.ContactService.xml",
+        "lib/netstandard2.0/Plugin.ContactService.dll",
+        "lib/netstandard2.0/Plugin.ContactService.xml",
+        "xamarin.forms.contacts.1.0.5.nupkg.sha512",
+        "xamarin.forms.contacts.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -924,23 +952,24 @@
       "NETStandard.Library >= 2.0.3",
       "Xamarin.Essentials >= 1.5.3.2",
       "Xamarin.Forms >= 4.6.0.1141",
+      "Xamarin.Forms.Contacts >= 1.0.5",
       "sqlite-net-pcl >= 1.7.335"
     ]
   },
   "packageFolders": {
-    "/Users/muhannadsayedabdullah/.nuget/packages/": {}
+    "/Users/yahyamokaied/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/MyToDo.csproj",
+      "projectUniqueName": "/Users/yahyamokaied/Projects/MyToDo/MyToDo/MyToDo.csproj",
       "projectName": "MyToDo",
-      "projectPath": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/MyToDo.csproj",
-      "packagesPath": "/Users/muhannadsayedabdullah/.nuget/packages/",
-      "outputPath": "/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo/obj/",
+      "projectPath": "/Users/yahyamokaied/Projects/MyToDo/MyToDo/MyToDo.csproj",
+      "packagesPath": "/Users/yahyamokaied/.nuget/packages/",
+      "outputPath": "/Users/yahyamokaied/Projects/MyToDo/MyToDo/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/muhannadsayedabdullah/.config/NuGet/NuGet.Config"
+        "/Users/yahyamokaied/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -975,6 +1004,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[4.6.0.1141, )"
+          },
+          "Xamarin.Forms.Contacts": {
+            "target": "Package",
+            "version": "[1.0.5, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",

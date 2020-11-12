@@ -9,20 +9,83 @@
 
                    TextColor="Black" FontSize="Medium" />--> 
         <StackLayout>
-            <Entry x:Name="taskNameInput" Placeholder="Enter the task name" Text="{Binding TaskName}"/>
-            <Label x:Name="testTask " Text="{Binding Path=TaskName}" />
-            <DatePicker x:Name="taskDateInput"  Date="{Binding Path=TaskDate}"  
-               Format="dd MMM, yyy"/>
-            <TimePicker x:Name="taskTimeInput" Time="{Binding Path=TaskTime}" />
-              <Switch x:Name="prioInput" IsToggled="{Binding Path=Prio}"/>
-                   
-               <Entry x:Name="guestInput" Placeholder="Enter a gust's name" Text="{Binding Path=Guest}"/>
 
-               <Button x:Name="upload" Text="Save and go back " Command="{Binding Path=BtnSave}"/>
+    <Label Text="  ADD NEW TASKS  " Font="Bold,20"
+           Margin="2" Padding="6"
+           HorizontalOptions="Center" VerticalOptions="Center"
+           BackgroundColor="LimeGreen" TextColor="White"
+    />
+
+    <Label Text="  TASK DETAILS  " Font="20"
+           Margin="2" Padding="6"
+           HorizontalOptions="Center" VerticalOptions="Center"
+           TextColor="LimeGreen"
+    />
+    <Editor x:Name="taskNameInput" Placeholder="              ENTER TASK DETAILS HERE ..." Text="{Binding TaskName}"
+            TextColor="#ff2469"  FontSize="20"
+            Margin="2"
+            AutoSize="TextChanges"
+    />
+            <!--
+                        <Label x:Name="testTask " Text="{Binding Path=TaskName}" />
+            -->
+
+    <Label Text="  DATE  " Font="20"
+           Margin="2" Padding="6"
+           HorizontalOptions="Center" VerticalOptions="Center"
+           TextColor="LimeGreen"
+    />
+    <DatePicker x:Name="taskDateInput"  Date="{Binding Path=TaskDate}"
+                HorizontalOptions="Center" VerticalOptions="Center"
+                Margin="2"
+                Format="dd MMM, yyy"
+    />
+
+    <TimePicker x:Name="taskTimeInput" Time="{Binding Path=TaskTime}"
+                HorizontalOptions="Center" VerticalOptions="Center"
+                Margin="2"
+    />
+
+    <Label Text="  PRIORITY  " Font="20"
+           Margin="2" Padding="6"
+           HorizontalOptions="Center" VerticalOptions="Center"
+           TextColor="LimeGreen"
+    />
+    <Switch x:Name="prioInput" IsToggled="{Binding Path=Prio}"
+            HorizontalOptions="Center" VerticalOptions="Center"
+            Margin="2"
+
+    />
+
+    <Label
+           Text="{OnPlatform Android=SEND YOUR TASK TO EMAIL, iOS=GUEST, UWP=GUEST}"
+           Font="20"
+           Margin="6" Padding="6"
+           HorizontalOptions="Center" VerticalOptions="Center"
+           TextColor="LimeGreen"
+    />
+     <Entry x:Name="guestInput"
+            Placeholder="{OnPlatform Android=ENTER YOUR EMAIL, iOS=ENTER GUEST NAME, UWP=ENTER GUEST NAME}"
+            Text="{Binding Path=Guest}"
+            HorizontalOptions="Center" VerticalOptions="Center"
+            Margin="6"
+     />
+
+    <Button x:Name="upload"
+            Text="{OnPlatform Android=SEND EMAIL and SAVE, iOS=SAVE, UWP=SAVE}"
+            Clicked="Btn_Mail"
+            Command="{Binding Path=BtnSave}"
+            BackgroundColor="#ff2469" TextColor="White"
+            Font="Bold,20"
+            WidthRequest="{OnPlatform Android=300, iOS=100, UWP=100}"
+            HeightRequest="40"
+            HorizontalOptions="Center" VerticalOptions="Center"
+            Margin="6" Padding="6"
+    />
            
-            <Label x:Name="testDate " Text="{Binding DateAndTime}" />
+     <Label x:Name="testDate " Text="{Binding DateAndTime}" />
             
-        </StackLayout>
+    </StackLayout>
         
     </ContentPage.Content>
 
