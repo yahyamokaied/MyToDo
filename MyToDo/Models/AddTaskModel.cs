@@ -20,7 +20,10 @@ namespace MyToDo.Models
 
         public override string ToString()
         {
-            return this.TaskName + "(" + TaskDate + TaskTime + "With " + Guest + ")";
+            string date = TaskDate.Date.ToShortDateString();
+            //string time = TaskTime.Date.ToShortTimeString();
+            //int minu = TaskTime.Minutes;
+            return this.TaskName + "\r(" + date +  "\rWith " + Guest + ")";
            // return base.ToString();
         }
 

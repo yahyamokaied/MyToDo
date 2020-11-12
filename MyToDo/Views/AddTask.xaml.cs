@@ -44,10 +44,10 @@ namespace MyToDo.Views
                     break;
                 case Device.Android:
                     var da = taskDateInput.Date.ToString();
-                    var ti = taskTimeInput.Time.ToString();
+                    //var ti = taskTimeInput.Time.ToString();
                     var pr = prioInput.IsToggled.ToString();
                     var ta = taskNameInput.Text.ToString();
-                    var sub = "New Task " + da + " "+ ti;
+                    var sub = "New Task " + da + " ";
                     var bod = " \rPriority: " + pr + " \rTask: " + ta;
                     await Email.ComposeAsync(sub,bod, guestInput.Text);
                     break;

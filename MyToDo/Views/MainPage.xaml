@@ -27,7 +27,36 @@
 
         <ListView
             x:Name="lv" SeparatorColor="LimeGreen"
-            ItemSelected="OnListItemSelected" />
+            ItemSelected="OnListItemSelected">
+
+        
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                <ViewCell>
+                    <StackLayout BackgroundColor="Beige"
+                                 Orientation="Vertical">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Binding TaskName}"
+                                   TextColor="BlueViolet"
+                                   FontSize="Large"
+                                   FontAttributes="Bold"
+                                   />
+                            <Label Text="{Binding TaskDate}"
+                                       TextColor="Tomato"
+                                       FontSize="Medium"/>
+                            
+                                         
+                        </StackLayout>
+                         </StackLayout>
+                    
+                                 
+                        
+                       
+                </ViewCell>
+            </DataTemplate>
+            </ListView.ItemTemplate>
+            
+            </ListView>
 
     </StackLayout>
 

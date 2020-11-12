@@ -945,3 +945,4 @@
 /Users/yahyamokaied/Projects/MyToDo/MyToDo.Android/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/yahyamokaied/Projects/MyToDo/MyToDo.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/yahyamokaied/Projects/MyToDo/MyToDo.Android/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
+/Users/muhannadsayedabdullah/Projects/MyToDo/MyToDo.Android/obj/Debug/android/assets/Plugin.ContactService.dll

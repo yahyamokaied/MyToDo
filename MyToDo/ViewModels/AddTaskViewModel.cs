@@ -55,7 +55,7 @@ namespace MyToDo.ViewModels
                          Guest = task.Guest,
                          TaskName = task.TaskName,
                          TaskDate = task.TaskDate,
-                         TaskTime = task.TaskTime,
+                        TaskTime = task.TaskTime,
                         
 
 
@@ -68,7 +68,7 @@ namespace MyToDo.ViewModels
         }
 
         
-
+        
         public DateTime TaskTime
 
         {
@@ -92,6 +92,7 @@ namespace MyToDo.ViewModels
 
             }
         }
+        
 
         public DateTime TaskDate
 
